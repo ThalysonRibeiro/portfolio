@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(navbar.css);
+@import url(responsive.css);
+@import url(header-animat.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+#space {
+  z-index: 1;
+  position: relative;
+}
+
+:root {
+  --light: #ffffff;
+  --text-light: #848484;
+  --text-light-2: #818181;
+  --gelo: #dcdcdc;
+  --text: #a8a8a8;
+  --cuke-blue: #0000A4;
+  --chrysler-blue: #0000E9;
+  --night: #101014;
+  --Rich-black: #000017;
+  --Dark-pastel-green: #24BD4D;
+  --font: "Roboto", sans-serif;
+  --size-F-1: 1.5rem;
+  --size-F-2: 4rem;
+  --size-F-3: 2rem;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+  background-color: var(--night);
+  z-index: 2;
+}
+
+header {
+  transition: background-color 0.9s, color 0.3s;
+  background-color: var(--Rich-black);
+  z-index: 2;
+
+
+}
+
+@keyframes gradient {
+  from {
+    background-position: 0 50%;
+  }
+
+  to {
+    background-position: 100%;
+
+  }
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding-top: 5%;
+  width: 100%;
+  height: 100vh;
+}
+
+.container-info {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 40%;
+  margin-left: 10%;
+  z-index: 2;
+
+}
+
+.container-info h1 {
+  font-size: var(--size-F-2);
+  font-weight: 900;
+  text-transform: capitalize;
+  color: var(--light);
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.19);
+}
+
+.container-info h2 {
+  font-size: var(--size-F-3);
+  color: var(--cuke-blue);
+  text-transform: uppercase;
+  font-weight: 300;
+  padding-top: 25px;
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.19);
+}
+
+.container-info p {
+  color: var(--light);
+  text-align: justify;
+  font-weight: 200;
+  font-size: var(--size-F-1);
+}
+
+.perfil {
+  flex: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10%;
+}
+
+.perfil img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.19);
+}
+
+.contato-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato-icons a {
+  padding: 25px;
+  font-size: 25px;
+  color: var(--text);
+  filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.19));
+}
+
+.contato-icons .bi-github:hover {
+  color: var(--light);
+  transition: 0.5s ease-in-out;
+}
+
+.contato-icons .bi-linkedin:hover {
+  color: var(--chrysler-blue);
+  transition: 0.5s ease-in-out;
+}
+
+.contato-icons .bi-whatsapp:hover {
+  color: var(--Dark-pastel-green);
+  transition: 0.5s ease-in-out;
+}
+
+/* darkmod */
+body.color header {
+  background-color: var(--light);
+}
+
+body.color .container-info h1 {
+  color: var(--cuke-blue);
+}
+
+body.color .container-info p {
+  color: var(--cuke-blue);
+}
+
+body.color .contato-icons .bi-github:hover {
+  color: var(--night);
+}

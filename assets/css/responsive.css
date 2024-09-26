@@ -1,0 +1,113 @@
+@media screen and (width >=1025px) {
+  #bnt-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #bnt-menu {
+    display: none;
+  }
+
+  .menu {
+    margin-left: 0;
+  }
+
+  .container-header {
+    flex-direction: column;
+    padding-top: 30%;
+    width: 100%;
+  }
+
+  .container-header .container-info {
+    padding: 0 10% 0 10%;
+    margin: 0;
+    flex: 30%;
+
+  }
+
+  .container-header .perfil {
+    padding: 0 10% 0 10%;
+    margin: 0;
+    flex: 40%;
+  }
+
+  .container-header .container-info h1 {
+    font-size: 2.5rem;
+  }
+
+  .container-header .container-info p {
+    font-size: 1rem;
+  }
+
+}
+
+@media (min-width: 344px) and (max-width:767px) {
+  nav {
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .menu {
+    margin-left: 0;
+  }
+
+  #bnt-menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    background: var(--night);
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .container-header {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container-header .container-info {
+    padding: 30% 10% 0 10%;
+    margin: 0;
+    flex: 30%;
+
+  }
+
+  .container-header .perfil {
+    padding: 0 10% 0 10%;
+    margin: 0;
+    flex: 40%;
+  }
+
+  .container-header .container-info h1 {
+    font-size: 2rem;
+  }
+
+  .container-header .container-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .container-header .container-info p {
+    font-size: 0.8rem;
+  }
+}
