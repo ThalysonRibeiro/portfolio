@@ -1,5 +1,6 @@
 @media screen and (width >=1025px) {
-  #bnt-menu {
+
+  button {
     display: none;
   }
 }
@@ -11,12 +12,16 @@
     justify-content: center;
   }
 
-  #bnt-menu {
+  button {
     display: none;
   }
 
   .menu {
     margin-left: 0;
+  }
+
+  .icon {
+    padding-right: 0;
   }
 
   .container-header {
@@ -45,6 +50,7 @@
   .container-header .container-info p {
     font-size: 1rem;
   }
+
 
 }
 
