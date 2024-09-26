@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Responsivo</title>
+  <style>
+    /* Estilos básicos */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    #navbar {
+      background-color: #333;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    .menu li {
+      margin-right: 20px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #bnt-menu {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .linha {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px 0;
+    }
+
+    .icon {
+      color: white;
+    }
+
+    /* Estilos para telas menores que 768px */
+    @media (max-width: 768px) {
+      #bnt-menu {
+        display: block;
+      }
+
+      .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+      }
+
+      .menu.show {
+        display: flex;
+      }
+
+      .menu li {
+        margin: 10px 0;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbar">
+    <button onclick="toggleMenu()" id="bnt-menu">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
+    <ul class="menu" id="menu">
+      <li><a href="#">home</a></li>
+      <li><a href="#">projetos</a></li>
+      <li><a href="#">sobre</a></li>
+      <li><a href="#">serviços</a></li>
+    </ul>
+    <div class="icon">
+      <i id="darkmod" class="bi bi-moon"></i>
+    </div>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      const bnt = document.getElementById("bnt-menu");
+      menu.classList.toggle("show");
+      bnt.classList.toggle("ativar");
+    }
+
+    // Fechar o menu se clicar fora dele
+    document.addEventListener('click', function (event) {
+      const menu = document.getElementById("menu");
+      const bnt = document.getElementById("bnt-menu");
+      const isClickInsideMenu = menu.contains(event.target);
+      const isClickOnButton = bnt.contains(event.target);
+
+      if (!isClickInsideMenu && !isClickOnButton && menu.classList.contains('show')) {
+        menu.classList.remove('show');
+        bnt.classList.remove('ativar');
+      }
+    });
+  </script>
+</body>
+
+</html>

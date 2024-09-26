@@ -1,0 +1,134 @@
+nav {
+  background: var(--night);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+}
+
+.linha {
+  width: 40px;
+  height: 5px;
+  background-color: var(--chrysler-blue);
+  display: block;
+  margin: 5px auto;
+  position: relative;
+  transform-origin: center;
+  transition: 0.2s;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 3px;
+}
+
+button.ativar {
+  border: none;
+  background: none;
+}
+
+button.ativar .linha:nth-child(1) {
+  transform: translateY(10px) rotate(-45deg);
+  background-color: var(--chrysler-blue);
+}
+
+button.ativar .linha:nth-child(3) {
+  transform: translateY(-10px) rotate(45deg);
+  background-color: var(--chrysler-blue);
+}
+
+button.ativar .linha:nth-child(2) {
+  width: 0;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.menu li a {
+  display: block;
+  margin-right: 60px;
+  text-decoration: none;
+  font-size: var(--size-F-1);
+  color: var(--text);
+  text-transform: capitalize;
+  position: relative;
+}
+
+.menu li a:hover {
+  color: var(--light);
+}
+
+.menu li a::after {
+  content: ' ';
+  width: 0%;
+  height: 2px;
+  background-color: var(--chrysler-blue);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.menu li a:hover::after {
+  width: 100%;
+}
+
+/* icons contato */
+.contato-icons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 35%;
+}
+
+.contato-icons a {
+  padding-left: 25px;
+  font-size: 25px;
+  color: var(--text);
+}
+
+.contato-icons .bi-github:hover {
+  color: var(--light);
+  transition: 0.5s ease-in-out;
+}
+
+.contato-icons .bi-linkedin:hover {
+  color: var(--text-2);
+  transition: 0.5s ease-in-out;
+}
+
+.icon {
+  color: var(--light);
+  cursor: pointer;
+  font-size: 25px;
+}
+
+/* darkmod */
+body.color {
+  background-color: var(--light);
+}
+
+.color nav {
+  background-color: var(--gelo);
+}
+
+body.color li a {
+  color: var(--text-light);
+}
+
+.color .menu li a:hover {
+  color: var(--night);
+}
+
+.color .menu {
+  background: var(--gelo);
+}
+
+.color .icon {
+  color: var(--night);
+}
