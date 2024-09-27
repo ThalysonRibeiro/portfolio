@@ -51,6 +51,29 @@
     font-size: 1rem;
   }
 
+  .container-cards {
+    width: 500px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    width: 400px;
+  }
+
+  .card .conteudo-card {
+    width: 400px;
+  }
+
+  .card .tecnologias {
+    width: 400px;
+  }
+
+  .botao-card {
+    width: 400px;
+  }
 
 }
 
@@ -115,5 +138,32 @@
 
   .container-header .container-info p {
     font-size: 0.8rem;
+  }
+
+  .container-cards {
+    width: 330px;
+    height: 460px;
+    margin: 20px;
+  }
+
+  .card img {
+    width: 300px;
+  }
+
+  .card .conteudo-card {
+    width: 290px;
+  }
+
+  .botao-card {
+    width: 300px;
+    margin: 10px;
+  }
+
+  .link-projeto {
+    padding: 5px;
+  }
+
+  .link-projeto span {
+    font-size: var(--size-F-6);
   }
 }

@@ -1,23 +1,22 @@
-document.addEventListener("click", () => {
+document.addEventListener("DOMContentLoaded", () => {
 	const menu = document.getElementById("menu");
-	const bnt = document.getElementById("bnt-menu");
-	menu.classList.toggle("show");
-	bnt.classList.toggle("ativar");
-});
+	const btn = document.getElementById("bnt-menu");
 
-// Fechar o menu se clicar fora dele
-document.addEventListener("click", (event) => {
-	const menu = document.getElementById("menu");
-	const bnt = document.getElementById("bnt-menu");
-	const isClickInsideMenu = menu.contains(event.target);
-	const isClickOnButton = bnt.contains(event.target);
-
-	if (
-		!isClickInsideMenu &&
-		!isClickOnButton &&
-		menu.classList.contains("show")
-	) {
-		menu.classList.remove("show");
-		bnt.classList.remove("ativar");
+	if (!menu || !btn) {
+		console.error("Menu ou botão não encontrados");
+		return;
 	}
+
+	document.addEventListener("click", (event) => {
+		const isClickInsideMenu = menu.contains(event.target);
+		const isClickOnButton = btn.contains(event.target);
+
+		if (isClickOnButton) {
+			menu.classList.toggle("show");
+			btn.classList.toggle("ativar");
+		} else if (!isClickInsideMenu && menu.classList.contains("show")) {
+			menu.classList.remove("show");
+			btn.classList.remove("ativar");
+		}
+	});
 });

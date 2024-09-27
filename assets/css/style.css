@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url(navbar.css);
+@import url(projetos.css);
 @import url(responsive.css);
-@import url(header-animat.css);
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font);
+  outline: none;
 }
 
-#space {
-  z-index: 1;
-  position: relative;
-}
+
 
 :root {
   --light: #ffffff;
@@ -23,19 +21,43 @@
   --text: #a8a8a8;
   --cuke-blue: #0000A4;
   --chrysler-blue: #0000E9;
+  --Federal-blue: #000042;
+
   --night: #101014;
   --Rich-black: #000017;
   --Dark-pastel-green: #24BD4D;
+  --html: #ff6600;
+  --css: #007bff;
+  --js: #ffcc00;
   --font: "Roboto", sans-serif;
-  --size-F-1: 1.5rem;
+  --size-F-1: 1.3rem;
   --size-F-2: 4rem;
-  --size-F-3: 2rem;
+  --size-F-3: 1.5rem;
+  --size-F-4: 2rem;
+  --size-F-5: 1rem;
+  --size-F-6: 0.8rem;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--chrysler-blue);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cuke-blue);
 }
 
 body {
   transition: background-color 0.3s, color 0.3s;
   background-color: var(--night);
-  z-index: 2;
 }
 
 header {
@@ -43,18 +65,6 @@ header {
   background-color: var(--Rich-black);
   height: 100vh;
   padding-top: 5%;
-  z-index: 2;
-}
-
-@keyframes gradient {
-  from {
-    background-position: 0 50%;
-  }
-
-  to {
-    background-position: 100%;
-
-  }
 }
 
 .container-header {
@@ -73,8 +83,6 @@ header {
   flex-direction: column;
   flex: 40%;
   margin-left: 10%;
-  z-index: 2;
-
 }
 
 .container-info h1 {
@@ -85,20 +93,24 @@ header {
   text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.19);
 }
 
-.container-info h2 {
-  font-size: var(--size-F-3);
-  color: var(--cuke-blue);
-  text-transform: uppercase;
-  font-weight: 300;
-  padding-top: 25px;
-  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.19);
-}
-
 .container-info p {
   color: var(--light);
   text-align: justify;
   font-weight: 200;
   font-size: var(--size-F-1);
+  padding: 25px;
+}
+
+.container-info p>span {
+  color: var(--cuke-blue);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.container-info h2>span {
+  color: var(--light);
+  font-size: var(--size-F-3);
+  font-weight: 300;
 }
 
 .perfil {
@@ -123,7 +135,7 @@ header {
 }
 
 .contato-icons a {
-  padding: 25px;
+  padding: 0 25px;
   font-size: 25px;
   color: var(--text);
   filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.19));
@@ -157,12 +169,10 @@ body.color .container-info p {
   color: var(--cuke-blue);
 }
 
-body.color .contato-icons .bi-github:hover {
+body.color .container-info p>span {
   color: var(--night);
 }
 
-/* .projetos {
-  background-color: var(--Rich-black);
-  height: 100vh;
-  width: 100%;
-} */
+body.color .contato-icons .bi-github:hover {
+  color: var(--night);
+}

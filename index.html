@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meu portfolio" />
+  <meta name="keywords" content="stie portfolio" />
+  <meta name="author" content="rafa-dev" />
   <link rel="stylesheet" href="assets/css/style.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -12,15 +16,14 @@
 </head>
 
 <body>
-
-  <nav id="navbar"">
-    <button id=" bnt-menu">
-    <span class="linha"></span>
-    <span class="linha"></span>
-    <span class="linha"></span>
+  <nav id="navbar">
+    <button id="bnt-menu">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
     </button>
     <ul class="menu" id="menu">
-      <li><a href="#">home</a></li>
+      <li><a href="#">inicio</a></li>
       <li><a href="#">projetos</a></li>
       <li><a href="#">sobre</a></li>
       <li><a href="#">serviços</a></li>
@@ -33,28 +36,56 @@
     <div class="container-header">
       <div class="container-info">
         <h1>thalyson ribeiro</h1>
-        <h2>desenvolvedor front-end</h2>
-        <div class="contato-icons">
-          <a href="#"><i class="bi bi-whatsapp"></i></a>
-          <a href="#"><i class="bi bi-github"></i></a>
-          <a href="#"><i class="bi bi-linkedin"></i></a>
-        </div>
-        <p>Sou apaixonado por criar interfaces atraentes e funcionais. Sempre busco me atualizar com as últimas
+        <p>Sou <span>dev font-end </span>apaixonado por criar interfaces atraentes e funcionais. Sempre busco me
+          atualizar com as últimas
           tendências e melhores práticas do mercado. Vamos transformar suas ideias em realidade!</p>
+        <div class="contato-icons">
+          <a href="#"><i class="bi bi-whatsapp" title="whatsapp" aria-label="whatsapp" data-social="whatsapp"></i></a>
+          <a href="#"><i class="bi bi-github" title="github" aria-label="github" data-social="github"></i></a>
+          <a href="#"><i class="bi bi-linkedin" title="linkedin" aria-label="linkedin" data-social="linkedin"></i></a>
+        </div>
 
       </div>
-      <div class="perfil"><img src="assets/img/perfil.jpg" alt=""></div>
+      <div class="perfil"><img src="assets/img/perfil.jpg" alt="imagem de perfil"></div>
     </div>
-    <div id="space"></div>
+    <div class="star-field">
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
   </header>
 
   <section class="projetos">
-    <!-- <h1>gg</h1> -->
-  </section>
+    <h2>alguns projetos</h2>
+    <div class="container-projetos" id="container-cards">
+      <!-- <div class="container-cards" id="container-cards">
+        <div class="card">
+          <img src="assets/img/cafe-na-xicara.png" alt="">
+          <div class="conteudo-card">
+            <h2>Café na Xícara</h2>
+            <h3>landing page</h3>
+            <p>Café na Xícara tem como objetivo apresentar informações sobre diferentes tipos de café, como
+              Arábica, Robusta, e Conilon, além de bebidas populares como Espresso, Cappuccino e Irish Coffee.</p>
+          </div>
+          <div class="tecnologias">
+            <i class="bi bi-filetype-html"></i>
+            <i class="bi bi-filetype-css"></i>
+            <i class="bi bi-filetype-js"></i>
+          </div>
+        </div>
+        <div class="botao-card">
+          <a class="link-projeto" href="#"><span>acesse o stie</span></a>
+          <a class="link-projeto" href="#"><span><i class="bi bi-github"></i></span></a>
+        </div>
+      </div> -->
 
-  <script src="assets/js/header-animat.js"></script>
+    </div>
+
+    </div>
+  </section>
+  <script src="assets/js/dados.js"></script>
   <script src="assets/js/darkmod.js"></script>
   <script src="assets/js/menu.js"></script>
+  <script src="assets/js/projetos.js"></script>
 </body>
 
 </html>
