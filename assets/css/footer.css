@@ -1,0 +1,134 @@
+footer {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-color-2);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-top: 1px solid var(--color-2);
+}
+
+footer h2 {
+  font-size: var(--size-F-4);
+  color: var(--text-color);
+}
+
+.cointeudo-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.links-form {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fomas-contato,
+.container-form {
+  width: 50%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.links-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  width: 300px;
+  height: 150px;
+  top: -10px;
+  border-radius: 5px;
+  border: 1px solid var(--color-3);
+  box-shadow: 0px 0px 10px 1px var(--shadow);
+}
+
+.links-footer:hover {
+  border: 1px solid var(--color-2);
+  transition: .4s ease-in-out;
+
+}
+
+.links-footer a {
+  text-decoration: none;
+  color: var(--text-color);
+  margin: 5px;
+}
+
+.links-footer a i {
+  margin: 5px;
+}
+
+.links-footer a:hover {
+  color: var(--color-1);
+  transition: .4s ease-in-out;
+}
+
+.qrcode img {
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 1px var(--shadow);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-nome,
+.campo-email,
+.campo-mensagem {
+  width: 400px;
+  height: 50px;
+  border-bottom: 1px solid var(--color-1);
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin: 25px;
+  color: var(--text-color);
+}
+
+.campo-submit {
+  background-color: var(--color-1);
+  margin: 25px;
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  display: block;
+  color: #FFFFFF;
+}
+
+.campo-submit:hover {
+  background-color: var(--color-4);
+  transition: .4s ease-in-out;
+}
+
+.direitos {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--color-2);
+}
+
+.direitos p {
+  margin-top: 10px;
+}
+
+.direitos p span {
+  color: var(--color-1);
+  text-transform: uppercase;
+  font-weight: 500;
+}

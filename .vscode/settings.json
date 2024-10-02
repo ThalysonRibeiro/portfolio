@@ -1,7 +1,0 @@
-{
-	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "biomejs.biome",
-	"[html]": {
-		"editor.defaultFormatter": "vscode.html-language-features"
-	}
-}

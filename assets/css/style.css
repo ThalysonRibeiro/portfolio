@@ -2,7 +2,7 @@
 @import url(navbar.css);
 @import url(projetos.css);
 @import url(sobre.css);
-@import url(contato.css);
+@import url(footer.css);
 @import url(responsive.css);
 
 * {
@@ -14,15 +14,14 @@
 }
 
 :root {
-  --bg-color: #000017;
-  --text-color: #FFFFFF;
-  --color-1: #0000E9;
-  --color-2: #0000A4;
-  --color-3: #000042;
-  --color-4: #ff0044;
-
-  --bg-color-2: #101014;
-
+  --bg-color: #f2f2f2;
+  --text-color: black;
+  --bg-color-2: #e6e6e6;
+  --color-1: #ff0037;
+  --color-2: #a4001b;
+  --color-3: #42000d;
+  --color-4: #0000E9;
+  --shadow: rgba(0, 0, 0, 0.2);
   --Dark-pastel-green: #24BD4D;
   --html: #ff6600;
   --css: #007bff;
@@ -36,15 +35,17 @@
 }
 
 [data-theme='dark'] {
-  --bg-color: #f2f2f2;
-  --text-color: black;
-  --bg-color-2: #e6e6e6;
-  --color-1: #ff0037;
-  --color-2: #a4001b;
-  --color-3: #42000d;
-  --color-4: #0000E9;
+  --bg-color: #000017;
+  --text-color: #FFFFFF;
+  --bg-color-2: #101014;
+  --color-1: #0000E9;
+  --color-2: #0000A4;
+  --color-3: #000042;
+  --color-4: #ff0044;
+}
 
-
+html {
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {

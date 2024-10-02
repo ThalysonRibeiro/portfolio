@@ -1,6 +1,6 @@
 .sobre {
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +24,7 @@
   justify-content: space-between;
   flex-direction: column;
   padding: 30px;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.088);
+  /* box-shadow: 0px 0px 10px 1px var(--shadow); */
 }
 
 .infos-pessoal p {
