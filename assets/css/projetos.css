@@ -1,6 +1,5 @@
 .projetos {
   transition: background-color 0.3s, color 0.3s;
-  background-color: var(--Rich-black);
   width: 100%;
   height: auto;
   display: flex;
@@ -10,8 +9,8 @@
 
 }
 
-.projetos>h2 {
-  color: var(--light);
+.projetos h2 {
+  color: var(--text-color);
   text-transform: capitalize;
   font-size: var(--size-F-4);
   margin-bottom: 50px;
@@ -33,10 +32,15 @@
   justify-content: center;
   width: 350px;
   height: 470px;
-  background-color: var(--night);
+  background-color: var(--bg-color-2);
   margin: 20px 0 40px 20px;
-  border: 1px solid var(--Federal-blue);
+  border: 1px solid var(--color-3);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.204);
+  border-radius: 5px;
+}
+
+.container-cards:hover {
+  border: 1px solid var(--color-2);
 }
 
 .card {
@@ -58,23 +62,27 @@
 
 .card .conteudo-card {
   width: 300px;
-  color: var(--light);
+  flex-direction: column;
+  color: var(--bg-color-2);
   font-weight: 300;
   font-size: var(--size-F-6);
 }
 
-.conteudo-card h2 {
-  padding-bottom: 5px;
+.conteudo-card>h2 {
+  margin: 0;
+  border-bottom: 1px solid var(--color-3);
 }
 
 .conteudo-card h3 {
+  padding-top: 5px;
   padding-bottom: 5px;
   font-weight: 400;
-  color: var(--cuke-blue);
+  color: var(--color-2);
 }
 
 .card .conteudo-card p {
   text-align: justify;
+  color: var(--text-color);
 }
 
 
@@ -111,11 +119,11 @@
 .link-projeto {
   padding: 10px;
   border-radius: 5px;
-  background-color: var(--cuke-blue);
+  background-color: var(--color-2);
   font-weight: 500;
-  color: var(--night);
+  color: #FFFFFF;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   position: relative;
   overflow: hidden;
 }
@@ -131,7 +139,7 @@
 
 .link-projeto::before {
   content: ' ';
-  background-color: var(--gelo);
+  background-color: var(--color-4);
   width: 0px;
   height: 0px;
   position: absolute;
@@ -145,20 +153,4 @@
 .link-projeto:hover:before {
   width: 1000px;
   height: 1000px;
-}
-
-.color .projetos {
-  background-color: var(--light);
-}
-
-.color .projetos h2 {
-  color: var(--night);
-}
-
-.color .container-cards {
-  background-color: var(--light);
-}
-
-.color .conteudo-card {
-  color: var(--night);
 }

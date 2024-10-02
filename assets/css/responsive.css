@@ -1,6 +1,6 @@
 @media screen and (width >=1025px) {
 
-  button {
+  #bnt-menu {
     display: none;
   }
 }
@@ -12,12 +12,16 @@
     justify-content: center;
   }
 
-  button {
+  #bnt-menu {
     display: none;
   }
 
   .menu {
     margin-left: 0;
+  }
+
+  .color .menu {
+    background: none;
   }
 
   .icon {
@@ -51,6 +55,19 @@
     font-size: 1rem;
   }
 
+  .infos-pessoal {
+    width: 90%;
+  }
+
+  .infos-pessoal h3,
+  h4 {
+    padding: 15px 0 15px 0;
+  }
+
+  .container-icons-skills {
+    width: 90%;
+  }
+
   .container-cards {
     width: 500px;
   }
@@ -75,6 +92,35 @@
     width: 400px;
   }
 
+  .container-contato {
+    width: 90%;
+  }
+
+  .container-info-contato,
+  .container-form {
+    width: 50%;
+  }
+
+  .fomas-contato {
+    width: 200px;
+  }
+
+  .container-form form {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .campo-nome,
+  .campo-email,
+  .campo-mensagem,
+  .campo-submit {
+    /* width: 210px; */
+    width: 100%;
+
+  }
+
 }
 
 @media (min-width: 344px) and (max-width:767px) {
@@ -84,22 +130,29 @@
     padding-right: 15px;
   }
 
+  .navbar-scrolled {
+    background: none;
+    box-shadow: none;
+
+  }
+
   .menu {
     margin-left: 0;
   }
 
   #bnt-menu {
     display: block;
+    z-index: 1;
   }
 
   .menu {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 75px;
+    top: 0;
     left: 0;
     right: 0;
-    background: var(--night);
+    background: var(--bg-color);
   }
 
   .menu.show {
@@ -110,13 +163,18 @@
     margin: 10px 0;
   }
 
+  .icon {
+    margin: 0;
+    padding: 0;
+
+  }
+
   .container-header {
     flex-direction: column;
     width: 100%;
   }
 
   .container-header .container-info {
-    padding: 30% 10% 0 10%;
     margin: 0;
     flex: 30%;
 
@@ -125,6 +183,7 @@
   .container-header .perfil {
     padding: 0 10% 0 10%;
     margin: 0;
+    margin-bottom: 10%;
     flex: 40%;
   }
 
@@ -138,6 +197,25 @@
 
   .container-header .container-info p {
     font-size: 0.8rem;
+  }
+
+
+  .infos-pessoal {
+    width: 90%;
+    height: auto;
+  }
+
+  .infos-pessoal h3,
+  h4 {
+    padding: 15px 0 15px 0;
+  }
+
+  .skills {
+    width: 90%;
+  }
+
+  .container-icons-skills {
+    width: 100%;
   }
 
   .container-cards {
@@ -165,5 +243,30 @@
 
   .link-projeto span {
     font-size: var(--size-F-6);
+  }
+
+  .container-contato {
+    flex-direction: column;
+  }
+
+  .container-form,
+  .container-info-contato {
+    height: auto;
+  }
+
+  .container-form form {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .campo-nome,
+  .campo-email,
+  .campo-mensagem,
+  .campo-submit {
+    /* width: 210px; */
+    width: 100%;
+
   }
 }

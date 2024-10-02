@@ -1,41 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url(navbar.css);
 @import url(projetos.css);
+@import url(sobre.css);
+@import url(contato.css);
 @import url(responsive.css);
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font);
+  font-family: "Roboto", sans-serif;
   outline: none;
 }
 
-
-
 :root {
-  --light: #ffffff;
-  --text-light: #848484;
-  --text-light-2: #818181;
-  --gelo: #dcdcdc;
-  --text: #a8a8a8;
-  --cuke-blue: #0000A4;
-  --chrysler-blue: #0000E9;
-  --Federal-blue: #000042;
+  --bg-color: #000017;
+  --text-color: #FFFFFF;
+  --color-1: #0000E9;
+  --color-2: #0000A4;
+  --color-3: #000042;
+  --color-4: #ff0044;
 
-  --night: #101014;
-  --Rich-black: #000017;
+  --bg-color-2: #101014;
+
   --Dark-pastel-green: #24BD4D;
   --html: #ff6600;
   --css: #007bff;
   --js: #ffcc00;
-  --font: "Roboto", sans-serif;
   --size-F-1: 1.3rem;
   --size-F-2: 4rem;
   --size-F-3: 1.5rem;
   --size-F-4: 2rem;
   --size-F-5: 1rem;
   --size-F-6: 0.8rem;
+}
+
+[data-theme='dark'] {
+  --bg-color: #f2f2f2;
+  --text-color: black;
+  --bg-color-2: #e6e6e6;
+  --color-1: #ff0037;
+  --color-2: #a4001b;
+  --color-3: #42000d;
+  --color-4: #0000E9;
+
+
 }
 
 ::-webkit-scrollbar {
@@ -47,22 +56,22 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--chrysler-blue);
+  background: var(--color-1);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--cuke-blue);
+  background: var(--color-2);
 }
 
 body {
-  transition: background-color 0.3s, color 0.3s;
-  background-color: var(--night);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 header {
   transition: background-color 0.9s, color 0.3s;
-  background-color: var(--Rich-black);
   height: 100vh;
   padding-top: 5%;
 }
@@ -89,26 +98,25 @@ header {
   font-size: var(--size-F-2);
   font-weight: 900;
   text-transform: capitalize;
-  color: var(--light);
+  color: var(--text-color);
   text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.19);
 }
 
 .container-info p {
-  color: var(--light);
+  color: var(--text-color);
   text-align: justify;
-  font-weight: 200;
-  font-size: var(--size-F-1);
+  font-weight: 300;
   padding: 25px;
 }
 
-.container-info p>span {
-  color: var(--cuke-blue);
+.container-info p span {
+  color: var(--color-2);
   text-transform: uppercase;
   font-weight: 400;
 }
 
-.container-info h2>span {
-  color: var(--light);
+.container-info h2 span {
+  color: var(--text-color);
   font-size: var(--size-F-3);
   font-weight: 300;
 }
@@ -126,53 +134,38 @@ header {
   height: 300px;
   border-radius: 50%;
   text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.19);
+  border: 2px solid var(--color-2);
 }
 
 .contato-icons {
+  height: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .contato-icons a {
+  display: block;
   padding: 0 25px;
-  font-size: 25px;
+  font-size: 40px;
   color: var(--text);
   filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.19));
 }
 
 .contato-icons .bi-github:hover {
-  color: var(--light);
+  color: var(--text-color);
+  font-size: 45px;
   transition: 0.5s ease-in-out;
 }
 
 .contato-icons .bi-linkedin:hover {
-  color: var(--chrysler-blue);
+  color: #0000E9;
+  font-size: 45px;
   transition: 0.5s ease-in-out;
 }
 
 .contato-icons .bi-whatsapp:hover {
   color: var(--Dark-pastel-green);
+  font-size: 45px;
   transition: 0.5s ease-in-out;
-}
-
-/* darkmod */
-body.color header {
-  background-color: var(--light);
-}
-
-body.color .container-info h1 {
-  color: var(--cuke-blue);
-}
-
-body.color .container-info p {
-  color: var(--cuke-blue);
-}
-
-body.color .container-info p>span {
-  color: var(--night);
-}
-
-body.color .contato-icons .bi-github:hover {
-  color: var(--night);
 }

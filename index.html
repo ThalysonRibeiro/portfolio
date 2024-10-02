@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Meu portfolio" />
-  <meta name="keywords" content="stie portfolio" />
+  <meta name="keywords" content="site portfolio" />
   <meta name="author" content="rafa-dev" />
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -24,9 +24,10 @@
     </button>
     <ul class="menu" id="menu">
       <li><a href="#">inicio</a></li>
-      <li><a href="#">projetos</a></li>
       <li><a href="#">sobre</a></li>
-      <li><a href="#">serviços</a></li>
+      <li><a href="#">projetos</a></li>
+      <!-- <li><a href="#">serviços</a></li> -->
+      <li><a href="#">contato</a></li>
     </ul>
     <div class="icon">
       <i id="darkmod" class="bi bi-moon"></i>
@@ -36,7 +37,8 @@
     <div class="container-header">
       <div class="container-info">
         <h1>thalyson ribeiro</h1>
-        <p>Sou <span>dev font-end </span>apaixonado por criar interfaces atraentes e funcionais. Sempre busco me
+        <p>Olá! Sou um <span>desenvolvedor front-end </span>apaixonado por criar experiências web
+          incríveis e intuitivas. Sempre busco me
           atualizar com as últimas
           tendências e melhores práticas do mercado. Vamos transformar suas ideias em realidade!</p>
         <div class="contato-icons">
@@ -46,16 +48,67 @@
         </div>
 
       </div>
-      <div class="perfil"><img src="assets/img/perfil.jpg" alt="imagem de perfil"></div>
+      <div class="perfil">
+        <img src="assets/img/perfil.jpg" alt="imagem de perfil">
+      </div>
     </div>
     <div class="star-field">
       <div class="layer"></div>
       <div class="layer"></div>
       <div class="layer"></div>
+    </div>
   </header>
-
+  <section class="sobre">
+    <h2>Sobre Mim</h2>
+    <div class="infos-pessoal">
+      <div class="contem-nome">
+        <i class="bi bi-person"></i>
+        <h3>Thalyson Ribeiro</h3>
+      </div>
+      <p>
+        Olá! Sou um desenvolvedor front-end apaixonado por criar experiências web incríveis e intuitivas. Com 5
+        anos de experiência no setor, especializo-me em transformar designs complexos em código limpo e
+        eficiente.
+      </p>
+      <div class="contem-habilidades">
+        <i class="bi bi-code"></i>
+        <h4>Habilidades Técnicas</h4>
+      </div>
+      <ul>
+        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+        <li>React.js, Vue.js</li>
+        <li>Tailwind CSS, Sass</li>
+        <li>Git, Webpack</li>
+        <li>Responsive Design, Performance Optimization</li>
+      </ul>
+      <div class="contem-porjetos">
+        <i class="bi bi-briefcase"></i>
+        <h4>Projetos Destacados</h4>
+      </div>
+      <ul>
+        <li>Redesign do site principal da TechCorp, resultando em um aumento de 30% na taxa de conversão</li>
+        <li>Desenvolvimento de um dashboard interativo para análise de dados em tempo real</li>
+        <li>Criação de uma biblioteca de componentes React reutilizáveis para acelerar o desenvolvimento de
+          projetos futuros</li>
+      </ul>
+    </div>
+    <div class="skills">
+      <div class=" container-icons-skills">
+        <div class="bc-skill"><img src="assets/img/icons/html.svg" alt="html" title="HTML"></div>
+        <div class="bc-skill"><img src="assets/img/icons/css.svg" alt="css" title="CSS"></div>
+        <div class="bc-skill"><img src="assets/img/icons/js.svg" alt="JavaScript" title="JavaScript"></div>
+        <div class="bc-skill"><i class="bi bi-github" title="github"></i></div>
+        <div class="bc-skill"><img class="ts" src="assets/img/icons/typescript.svg" alt="typescript" title="TypeScript">
+        </div>
+        <div class="bc-skill"><img src="assets/img/icons/tailwindcss.svg" alt="tailwindcss" title="Tailwind CSS"></div>
+        <div class="bc-skill"><img src="assets/img/icons/react.svg" alt="react" title="React"></div>
+        <div class="bc-skill"><img src="assets/img/icons/visual-studio.svg" alt="visual studio" title="Visual Studio">
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="projetos">
-    <h2>alguns projetos</h2>
+    <h2>projetos</h2>
     <div class="container-projetos" id="container-cards">
       <!-- <div class="container-cards" id="container-cards">
         <div class="card">
@@ -77,11 +130,34 @@
           <a class="link-projeto" href="#"><span><i class="bi bi-github"></i></span></a>
         </div>
       </div> -->
-
-    </div>
-
     </div>
   </section>
+
+  <section class="contato">
+    <h2>Contato</h2>
+    <div class="container-contato">
+      <div class="container-info-contato">
+        <div class="fomas-contato">
+          <a href="#"><i class="bi bi-envelope"></i>rafinha.head@gmail.com</a>
+          <a href="#"><i class="bi bi-github"></i>ThalysonRibeiro</a>
+          <a href="#"><i class="bi bi-whatsapp"></i>whatsapp</a>
+        </div>
+      </div>
+      <div class="container-form">
+        <form action="">
+          <input class="campo-nome" type="text" name="text" placeholder="Nome:" required id="campo-nome">
+          <input class="campo-email" type="email" name="email" placeholder="Email:" required id="campo-email">
+          <textarea class="campo-mensagem" name="mansagem" rows="6" placeholder="Mensagem:"
+            id="campo-mensagem"></textarea>
+          <button class="campo-submit" required id="campo-submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+
+  </footer>
   <script src="assets/js/dados.js"></script>
   <script src="assets/js/darkmod.js"></script>
   <script src="assets/js/menu.js"></script>
