@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-	// botão
+  // botão
 
-	const divCards = document.getElementById("container-cards");
-	let card = "";
+  const divCards = document.getElementById("container-cards");
+  let card = "";
 
-	for (const projeto of projetos) {
-		card += /* html */ `
-   <div class="container-cards">
+  for (const projeto of projetos) {
+    card += /* html */ `
+   <div class="container-cards" data-aos="zoom-out">
         <div class="card">
           <img src="${projeto.image}" alt="">
           <div class="conteudo-card">
@@ -24,16 +24,16 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         </div>
   `;
-	}
-	divCards.innerHTML = card;
+  }
+  divCards.innerHTML = card;
 
-	const btns = document.querySelectorAll(".link-projeto");
-	for (const btn of btns) {
-		btn.addEventListener("mousemove", (e) => {
-			const x = e.pageX - btn.offsetLeft;
-			const y = e.pageY - btn.offsetTop;
-			btn.style.setProperty("--eixoX", `${x}px`);
-			btn.style.setProperty("--eixoY", `${y}px`);
-		});
-	}
+  const btns = document.querySelectorAll(".link-projeto");
+  for (const btn of btns) {
+    btn.addEventListener("mousemove", (e) => {
+      const x = e.pageX - btn.offsetLeft;
+      const y = e.pageY - btn.offsetTop;
+      btn.style.setProperty("--eixoX", `${x}px`);
+      btn.style.setProperty("--eixoY", `${y}px`);
+    });
+  }
 });

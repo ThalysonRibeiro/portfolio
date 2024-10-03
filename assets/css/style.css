@@ -3,6 +3,7 @@
 @import url(projetos.css);
 @import url(sobre.css);
 @import url(footer.css);
+@import url(obrigado.css);
 @import url(responsive.css);
 
 * {
@@ -15,7 +16,7 @@
 
 :root {
   --bg-color: #f2f2f2;
-  --text-color: black;
+  --text-color: #000000;
   --bg-color-2: #e6e6e6;
   --color-1: #ff0037;
   --color-2: #a4001b;
@@ -23,11 +24,8 @@
   --color-4: #0000E9;
   --shadow: rgba(0, 0, 0, 0.2);
   --Dark-pastel-green: #24BD4D;
-  --html: #ff6600;
-  --css: #007bff;
-  --js: #ffcc00;
   --size-F-1: 1.3rem;
-  --size-F-2: 4rem;
+  --size-F-2: 3.5rem;
   --size-F-3: 1.5rem;
   --size-F-4: 2rem;
   --size-F-5: 1rem;
@@ -71,6 +69,13 @@ body {
   transition: background-color 0.5s, color 0.5s;
 }
 
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
 header {
   transition: background-color 0.9s, color 0.3s;
   height: 100vh;
@@ -98,7 +103,7 @@ header {
 .container-info h1 {
   font-size: var(--size-F-2);
   font-weight: 900;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: var(--text-color);
   text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.19);
 }

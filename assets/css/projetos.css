@@ -96,18 +96,6 @@
   padding-right: 10px;
 }
 
-.tecnologias .bi-filetype-html {
-  color: var(--html);
-}
-
-.tecnologias .bi-filetype-css {
-  color: var(--css);
-}
-
-.tecnologias .bi-filetype-js {
-  color: var(--js);
-}
-
 .botao-card {
   width: 300px;
   display: flex;
