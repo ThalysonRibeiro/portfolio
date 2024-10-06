@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .then(data => {
         console.log('Success:', data); // Log do sucesso
-        window.location.href = "https://portfolio-tau-weld-10.vercel.app/obrigado.html"; // Redirecionamento
+        window.location.href = "obrigado.html"; // Redirecionamento
       })
       .catch((error) => {
         console.error('Erro:', error); // Log do erro
