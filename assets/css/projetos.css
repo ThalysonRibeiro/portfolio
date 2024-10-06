@@ -124,20 +124,7 @@
   font-size: var(--size-F-5);
 }
 
-.link-projeto::before {
-  content: ' ';
+.link-projeto:hover {
   background-color: var(--color-4);
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  top: var(--eixoY);
-  left: var(--eixoX);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  transition: width .5s, height .5s;
-}
-
-.link-projeto:hover:before {
-  width: 1000px;
-  height: 1000px;
+  transition: .4s ease-in-out
 }

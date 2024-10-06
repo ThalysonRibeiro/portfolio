@@ -76,14 +76,14 @@ h4 {
 
 .container-icons-skills img:hover {
   width: 55px;
-  transition: .5s ease-in-out;
+  transition: .2s ease-in-out;
 
 }
 
 .container-icons-skills i {
   font-size: 40px;
   color: var(--text-color);
-  transition: .5s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .container-icons-skills i:hover {

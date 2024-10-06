@@ -50,9 +50,12 @@
           atualizar com as últimas
           tendências e melhores práticas do mercado. Vamos transformar suas ideias em realidade!</p>
         <div class="contato-icons">
-          <a href="#"><i class="bi bi-whatsapp" title="whatsapp" aria-label="whatsapp" data-social="whatsapp"></i></a>
-          <a href="#"><i class="bi bi-github" title="github" aria-label="github" data-social="github"></i></a>
-          <a href="#"><i class="bi bi-linkedin" title="linkedin" aria-label="linkedin" data-social="linkedin"></i></a>
+          <div class="s-i"><a href="#"><i class="bi bi-whatsapp" title="whatsapp" aria-label="whatsapp"
+                data-social="whatsapp"></i></a></div>
+          <div class="s-i"><a href="#"><i class="bi bi-github" title="github" aria-label="github"
+                data-social="github"></i></a></div>
+          <div class="s-i"><a href="#"><i class="bi bi-linkedin" title="linkedin" aria-label="linkedin"
+                data-social="linkedin"></i></a></div>
         </div>
       </div>
       <div class="perfil" data-aos="flip-right">
@@ -128,20 +131,21 @@
     <div class="cointeudo-footer">
       <div class="links-form">
         <div class="fomas-contato">
-          <div class="links-footer">
+          <div class="links-footer" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <a href="#"><i class="bi bi-envelope"></i>rafinha.head@gmail.com</a>
             <a href="#"><i class="bi bi-github"></i>ThalysonRibeiro</a>
             <a href="#"><i class="bi bi-whatsapp"></i>whatsapp</a>
+            <a href="#"><i class="bi bi-linkedin"></i>Linkedin</a>
           </div>
-          <div class="qrcode">
+          <div class="qrcode" data-aos="flip-down">
             <img src="assets/img/frame.png" alt="">
           </div>
         </div>
         <div class="container-form">
-          <form action="https://formspree.io/f/xeoqjogw" method="POST">
-            <input class="campo-nome" type="text" name="text" placeholder="Nome:" required id="campo-nome">
+          <form id="emailForm">
+            <input class="campo-nome" type="text" name="name" placeholder="Nome:" required id="campo-nome">
             <input class="campo-email" type="email" name="email" placeholder="Email:" required id="campo-email">
-            <textarea class="campo-mensagem" name="mansagem" rows="6" placeholder="Mensagem:"
+            <textarea class="campo-mensagem" name="mensagem" rows="6" placeholder="Mensagem:"
               id="campo-mensagem"></textarea>
             <button class="campo-submit" required id="campo-submit">Enviar</button>
           </form>
@@ -149,7 +153,7 @@
       </div>
     </div>
     <div class="direitos">
-      <p>&copy; 2024 Todos os direitos reservados. | Desenvolvido <span class="destaque">Thalyson │ Dev.</span></p>
+      <p>&copy; 2024 Todos os direitos reservados. | Desenvolvido por <span class="destaque">Thalyson │ Dev.</span></p>
     </div>
   </footer>
 
@@ -158,6 +162,7 @@
   <script src="assets/js/menu.js"></script>
   <script src="assets/js/projetos.js"></script>
   <script src="assets/js/particles.js"></script>
+  <script src="assets/js/form.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

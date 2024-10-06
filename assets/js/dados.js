@@ -23,6 +23,4 @@ const projetos = [
 		site: "https://links-tau-five.vercel.app/",
 		repositorio: "https://github.com/ThalysonRibeiro/links",
 	},
-
-
 ];

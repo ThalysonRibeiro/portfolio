@@ -6,7 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   for (const projeto of projetos) {
     card += /* html */ `
-   <div class="container-cards" data-aos="zoom-out">
+   <div class="container-cards" data-aos="fade-up"
+   data-aos-anchor-placement="bottom-bottom">
         <div class="card">
           <img src="${projeto.image}" alt="">
           <div class="conteudo-card">
@@ -26,14 +27,4 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
   }
   divCards.innerHTML = card;
-
-  const btns = document.querySelectorAll(".link-projeto");
-  for (const btn of btns) {
-    btn.addEventListener("mousemove", (e) => {
-      const x = e.pageX - btn.offsetLeft;
-      const y = e.pageY - btn.offsetTop;
-      btn.style.setProperty("--eixoX", `${x}px`);
-      btn.style.setProperty("--eixoY", `${y}px`);
-    });
-  }
 });
