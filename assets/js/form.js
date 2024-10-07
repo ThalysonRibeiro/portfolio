@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .then(data => {
         console.log('Success:', data); // Log do sucesso
-        window.location.href = "obrigado.html"; // Redirecionamento
+        window.location.href = "obrigado"; // Redirecionamento
       })
       .catch((error) => {
         console.error('Erro:', error); // Log do erro
