@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </div>
         <div class="botao-card">
-          <a class="link-projeto" href="${projeto.site}"target="_blank"><span>acesse o stie</span></a>
-          <a class="link-projeto" href="${projeto.repositorio}"target="_blank"><span><i class="bi bi-github"></i></span></a>
+          <a class="link-projeto" href="${projeto.site}"target="_blank">acesse o stie</a>
+          <a class="link-projeto" href="${projeto.repositorio}"target="_blank"><i class="bi bi-github"></i> repositorio</a>
         </div>
         </div>
   `;

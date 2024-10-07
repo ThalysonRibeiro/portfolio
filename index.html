@@ -31,11 +31,10 @@
       <span class="linha"></span>
     </button>
     <ul class="menu" id="menu">
-      <li><a href="/inicio">inicio</a></li>
-      <li><a href="/sobre">sobre</a></li>
-      <li><a href="/projetos">projetos</a></li>
-      <!-- <li><a href="/">serviços</a></li> -->
-      <li><a href="/contatos">contato</a></li>
+      <li><a href="#inicio">inicio</a></li>
+      <li><a href="#sobre">sobre</a></li>
+      <li><a href="#projetos">projetos</a></li>
+      <li><a href="#contatos">contato</a></li>
     </ul>
     <div class="icon">
       <i id="darkmod" class="bi bi-moon"></i>
@@ -68,9 +67,9 @@
       <div class="layer"></div>
     </div>
   </header>
-  <section class="sobre" id="sobre" data-aos="zoom-in">
+  <section class="sobre" id="sobre">
     <h2>Sobre Mim</h2>
-    <div class="infos-pessoal">
+    <div class="infos-pessoal" data-aos="zoom-in">
       <div class="contem-nome">
         <i class="bi bi-person"></i>
         <h3>Thalyson Ribeiro</h3>
@@ -102,18 +101,16 @@
           projetos futuros</li>
       </ul>
     </div>
-    <div class="skills" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
-      <div class=" container-icons-skills">
-        <div class="bc-skill"><img src="assets/img/icons/html.svg" alt="html" title="HTML"></div>
-        <div class="bc-skill"><img src="assets/img/icons/css.svg" alt="css" title="CSS"></div>
-        <div class="bc-skill"><img src="assets/img/icons/js.svg" alt="JavaScript" title="JavaScript"></div>
-        <div class="bc-skill"><i class="bi bi-github" title="github"></i></div>
-        <div class="bc-skill"><img class="ts" src="assets/img/icons/typescript.svg" alt="typescript" title="TypeScript">
-        </div>
-        <div class="bc-skill"><img src="assets/img/icons/tailwindcss.svg" alt="tailwindcss" title="Tailwind CSS"></div>
-        <div class="bc-skill"><img src="assets/img/icons/react.svg" alt="react" title="React"></div>
-        <div class="bc-skill"><img src="assets/img/icons/visual-studio.svg" alt="visual studio" title="Visual Studio">
-        </div>
+    <div class="skills">
+      <h3>skills</h3>
+      <div class=" container-skills">
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">HTML</div>
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">CSS</div>
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">JavaScript</div>
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">github</div>
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">TypeScript</div>
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Tailwind CSS</div>
+        <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">React</div>
       </div>
     </div>
   </section>
@@ -143,11 +140,14 @@
         </div>
         <div class="container-form">
           <form id="emailForm">
-            <input class="campo-nome" type="text" name="name" placeholder="Nome:" required id="campo-nome">
-            <input class="campo-email" type="email" name="email" placeholder="Email:" required id="campo-email">
-            <textarea class="campo-mensagem" name="mensagem" rows="6" placeholder="Mensagem:"
-              id="campo-mensagem"></textarea>
-            <button class="campo-submit" required id="campo-submit">Enviar</button>
+            <input data-aos="fade-up" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom" class="campo-nome"
+              type="text" name="name" placeholder="Nome:" required id="campo-nome">
+            <input data-aos="fade-up" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom"
+              class="campo-email" type="email" name="email" placeholder="Email:" required id="campo-email">
+            <textarea data-aos="fade-up" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom"
+              class="campo-mensagem" name="mensagem" rows="6" placeholder="Mensagem:" id="campo-mensagem"></textarea>
+            <button data-aos="fade-up" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom"
+              class="campo-submit" required id="campo-submit">Enviar</button>
           </form>
         </div>
       </div>
