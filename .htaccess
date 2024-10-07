@@ -1,0 +1,15 @@
+# Habilita o motor de reescrita
+RewriteEngine On
+RewriteBase /
+
+# Permite acesso direto a arquivos existentes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redireciona outras requisições para o index.html
+RewriteRule . /index.html [L]
+
+# Configurações de CORS se necessário
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
