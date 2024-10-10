@@ -26,7 +26,6 @@
 
   .container-header {
     flex-direction: column;
-    padding-top: 30%;
     width: 100%;
   }
 
@@ -49,20 +48,25 @@
 
   .container-header .container-info p {
     font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    padding-left: 25px;
   }
 
-  .infos-pessoal {
+  .sobre-mim {
     width: 90%;
-    height: auto;
   }
 
-  .infos-pessoal h3,
-  h4 {
-    padding: 15px 0 15px 0;
+  .container-list {
+    flex-direction: column;
   }
 
-  .container-icons-skills {
-    width: 90%;
+  .soft-skils {
+    width: 30%;
+  }
+
+  .skills {
+    width: 70%;
   }
 
   .container-cards {
@@ -127,7 +131,7 @@
   }
 }
 
-@media (min-width: 344px) and (max-width:767px) {
+@media (min-width: 390px) and (max-width:767px) {
   nav {
     justify-content: space-between;
     padding-left: 15px;
@@ -203,23 +207,16 @@
     font-size: 0.8rem;
   }
 
-
-  .infos-pessoal {
-    width: 90%;
-    height: auto;
-  }
-
-  .infos-pessoal h3,
-  h4 {
-    padding: 15px 0 15px 0;
-  }
-
-  .skills {
+  .sobre-mim {
     width: 90%;
   }
 
-  .container-icons-skills {
-    width: 100%;
+  .sobre-mim {
+    padding: 0;
+  }
+
+  .container-list {
+    flex-direction: column;
   }
 
   .container-cards {
@@ -255,6 +252,7 @@
   }
 
   footer {
+    width: 100%;
     height: auto;
   }
 
@@ -268,10 +266,6 @@
     flex-direction: column;
     height: 400px;
   }
-
-  /* .links-footer {
-    height: 100px;
-  } */
 
   .links-form {
     flex-direction: column;
@@ -295,5 +289,39 @@
     height: 55px;
     font-size: 17px;
     text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width:389px) {
+  .container-cards {
+    width: 270px;
+    height: 500px;
+    margin: 20px;
+  }
+
+  .card img {
+    width: 260px;
+  }
+
+  .card .conteudo-card {
+    width: 260px;
+  }
+
+  .conteudo-card h2 {
+    font-size: var(--size-F-5);
+  }
+
+  .card .tecnologias {
+    width: 260px;
+    display: flex;
+  }
+
+  .tecnologias img {
+    width: 35px;
+  }
+
+  .botao-card {
+    width: 250px;
+    margin: 10px;
   }
 }

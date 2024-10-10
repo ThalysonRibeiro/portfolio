@@ -11,53 +11,76 @@
 .sobre h2 {
   font-size: var(--size-F-4);
   color: var(--text-color);
-  margin: 100px 0 100px 0;
+  margin: 100px 0 30px 0;
 }
 
-.infos-pessoal {
-  width: 1100px;
-  height: 400px;
+.sobre-mim {
+  width: 90%;
+  height: auto;
   padding: 10px;
   background-color: var(--bg-color-2);
   border: 1px solid var(--color-3);
   border-radius: 5px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
   padding: 30px;
-  /* box-shadow: 0px 0px 10px 1px var(--shadow); */
 }
 
-.infos-pessoal p {
-  color: var(--text-color);
-  font-weight: 300;
-}
-
-.infos-pessoal h3,
-h4 {
-  color: var(--text-color);
-  font-weight: 500;
-}
-
-.infos-pessoal ul li {
-  color: var(--text-color);
-  font-weight: 300;
-}
-
-.skills {
-  width: 1100px;
+.info-hab {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.sobre-1,
+.sobre-2 {
+  display: flex;
+}
+
+
+.info-hab {
+  width: 100%;
+  display: block;
   flex-direction: column;
 }
 
-.skills h3 {
-  color: var(--text-color);
-  text-transform: capitalize;
-  font-size: var(--size-F-4);
-  margin: 50px 0 50px 0;
+.info-hab h3 {
+  font-size: var(--size-F-1);
 }
+
+.info-hab h3,
+p,
+ul {
+  color: var(--text-color);
+  margin: 10px;
+}
+
+.info-hab ul,
+.container-list ul {
+  list-style: none;
+}
+
+.soft-skils,
+.skills {
+  width: 50%;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.soft-skils h3 {
+  margin: 10px;
+}
+
+.container-list {
+  width: 100%;
+  display: flex;
+}
+
+.fa-solid {
+  color: var(--color-2);
+}
+
 
 .container-skills {
   width: 100%;
@@ -86,8 +109,7 @@ h4 {
 }
 
 .contem-nome,
-.contem-habilidades,
-.contem-porjetos {
+.contem-habilidades {
   display: flex;
   align-items: center;
 }
@@ -100,9 +122,4 @@ h4 {
 .contem-habilidades i {
   margin-right: 5px;
   color: var(--Dark-pastel-green);
-}
-
-.contem-porjetos i {
-  margin-right: 5px;
-  color: var(--color-4);
 }

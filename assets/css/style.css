@@ -18,10 +18,9 @@
   --bg-color: #f2f2f2;
   --text-color: #000000;
   --bg-color-2: #e6e6e6;
-  --color-1: #ff0037;
-  --color-2: #b3001e;
-  --color-3: #5e0013;
-  --color-4: #0000E9;
+  --color-1: #0000E9;
+  --color-2: #0000A4;
+  --color-3: #000042;
   --shadow: rgba(0, 0, 0, 0.2);
   --Dark-pastel-green: #24BD4D;
   --size-F-1: 1.3rem;
@@ -36,10 +35,6 @@
   --bg-color: #000017;
   --text-color: #FFFFFF;
   --bg-color-2: #101014;
-  --color-1: #0000E9;
-  --color-2: #0000A4;
-  --color-3: #000042;
-  --color-4: #ff0044;
 }
 
 html {
@@ -115,9 +110,9 @@ header {
   padding: 25px;
 }
 
-.container-info p span {
-  color: var(--color-2);
-  text-transform: uppercase;
+.destaque {
+  color: var(--color-1);
+  text-transform: capitalize;
   font-weight: 400;
 }
 

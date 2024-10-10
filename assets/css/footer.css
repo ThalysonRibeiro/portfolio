@@ -17,6 +17,8 @@ footer {
 }
 
 .titulo-contato h2 {
+  margin-top: 15px;
+  /* padding-top: 15px; */
   font-size: var(--size-F-4);
   color: var(--text-color);
 }
@@ -40,7 +42,6 @@ footer {
 .fomas-contato,
 .container-form {
   width: 50%;
-  /* height: 450px; */
   height: 100%;
   display: flex;
   align-items: center;
@@ -103,13 +104,13 @@ form {
   border-top: none;
   border-right: none;
   border-left: none;
-  margin: 25px;
+  margin: 10px;
   color: var(--text-color);
 }
 
 .campo-submit {
   background-color: var(--color-1);
-  margin: 25px;
+  margin: 7px;
   width: 400px;
   height: 40px;
   border-radius: 10px;
@@ -119,7 +120,7 @@ form {
 }
 
 .campo-submit:hover {
-  background-color: var(--color-4);
+  background-color: var(--color-3);
   transition: .4s ease-in-out;
 }
 
