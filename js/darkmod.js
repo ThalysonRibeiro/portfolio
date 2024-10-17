@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	const sunIcon = "bi-sun";
 
 	// Inicia com o tema escuro
-	html.setAttribute("data-theme", darkTheme);
-	darkmod.classList.replace(moonIcon, sunIcon);
+	// html.setAttribute("data-theme", darkTheme);
+	// darkmod.classList.replace(moonIcon, sunIcon);
 
 	// Salva a preferência no localStorage
-	localStorage.setItem("theme", darkTheme);
+	// localStorage.setItem("theme", darkTheme);
 
 	darkmod.onclick = () => {
 		const currentTheme = html.getAttribute("data-theme");

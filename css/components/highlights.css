@@ -1,0 +1,132 @@
+.highlights {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  scroll-margin-top: 4rem;
+}
+
+.highlights h2 {
+  font-size: var(--size-F-5);
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.highlights p {
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+.project__highlights {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project__left {
+  width: 35%;
+  margin-left: 10%;
+}
+
+.project__left img {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.project__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 35%;
+  margin-right: 10%;
+}
+
+.project__right h3 {
+  font-size: var(--size-F-4);
+  font-weight: 300;
+}
+
+.project__right h4 {
+  color: var(--color-1);
+}
+
+.technologies {
+  width: 100%;
+}
+
+.project__right p {
+  font-weight: 200;
+  line-height: 2rem;
+}
+
+.technologies img {
+  width: 30px;
+}
+
+.btn__links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn__links a {
+  color: var(--text-color);
+  padding: 0.5rem;
+}
+
+.btn__links a:hover {
+  color: var(--color-1);
+  transition: 0.2s ease-in-out;
+}
+
+
+@media (min-width: 390px) and (max-width:768px) {
+  .project__highlights {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .project__left {
+    margin-left: 0;
+    width: 80%;
+  }
+
+  .project__right {
+    width: 80%;
+    margin-right: 0;
+  }
+}
+
+@media screen and (width <390px) {
+  .highlights h2 {
+    font-size: var(--size-F-3);
+    text-align: center;
+  }
+
+  .highlights p {
+    text-align: center;
+  }
+
+  .project__highlights {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .project__left {
+    margin-left: 0;
+    width: 80%;
+  }
+
+  .project__right {
+    width: 80%;
+    margin-right: 0;
+  }
+}

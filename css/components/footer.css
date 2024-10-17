@@ -1,0 +1,143 @@
+.footer__contatc {
+  width: 100%;
+  min-height: 50vh;
+  height: auto;
+  background-color: var(--bg-color-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  /* scroll-margin-top: 4rem; */
+}
+
+.contatc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contatc__left {
+  width: 56%;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contatc__center__left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contatc__center__left a {
+  text-decoration: none;
+  font-weight: 200;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.contatc__center__left a i {
+  margin-right: 0.5rem;
+}
+
+.contatc__center__left a:hover {
+  color: var(--color-1);
+}
+
+.contatc__center__right {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contatc__center__right img {
+  width: 50%;
+  border-radius: 0.5rem;
+}
+
+.contatc__right {
+  width: 28%;
+  margin-right: 10%;
+}
+
+.contatc__right form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.campo-nome,
+.campo-email,
+.campo-mensagem {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid var(--color-1);
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin: 0.1rem;
+  color: var(--text-color);
+}
+
+
+.campo-submit {
+  /* background-color: var(--color-1); */
+  margin: 7px;
+  width: 100%;
+  height: 40px;
+  color: var(--text-color);
+  border-radius: 0.3rem;
+  border: 1px solid var(--color-1);
+  display: block;
+  margin-top: 1rem;
+}
+
+.campo-submit:hover {
+  background-color: var(--color-2);
+  color: #FFF;
+  transition: .4s ease-in-out;
+}
+
+.direitos {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+@media (min-width: 390px) and (max-width:768px) {
+  .contatc {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .contatc__left,
+  .contatc__right {
+    width: 80%;
+    margin: 0;
+  }
+}
+
+@media screen and (width <390px) {
+  .contatc {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .contatc__left,
+  .contatc__right {
+    width: 80%;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .contatc__center__left {
+    width: 80%;
+    /* font-size: 0.8rem; */
+  }
+
+}

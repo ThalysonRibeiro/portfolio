@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 	const menu = document.getElementById("menu");
-	const btn = document.getElementById("bnt-menu");
+	const btn = document.getElementById("btn-menu");
 
 	if (!menu || !btn) {
 		console.error("Menu ou botão não encontrados");

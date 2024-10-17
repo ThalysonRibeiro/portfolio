@@ -1,0 +1,22 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --bg-color-2: #f3f6fb;
+  --color-1: #0000E9;
+  --color-2: #0000A4;
+  --color-3: #000042;
+  --shadow: rgba(0, 0, 0, 0.2);
+  --Dark-pastel-green: #24BD4D;
+  --font-family: 'DM Sans', sans-serif;
+  --size-F-1: 1rem;
+  --size-F-2: 1.3rem;
+  --size-F-3: 1.5rem;
+  --size-F-4: 2rem;
+  --size-F-5: 3rem;
+}
+
+[data-theme='dark'] {
+  --bg-color: #000012;
+  --text-color: #FFFFFF;
+  --bg-color-2: #101014;
+}

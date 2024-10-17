@@ -21,7 +21,7 @@ window.onload = async function () {
           "enable": true,
           "speed": {
             "min": 0.1,
-            "max": 1
+            "max": 0.1
           }
         },
         "number": {

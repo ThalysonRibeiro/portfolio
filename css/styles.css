@@ -1,0 +1,10 @@
+@import url(variavel.css);
+@import url(global.css);
+
+@import url(components/navbar.css);
+@import url(components/header.css);
+@import url(components/about_me.css);
+@import url(components/skills.css);
+@import url(components/highlights.css);
+@import url(components/footer.css);
+@import url(components/thanks.css);
