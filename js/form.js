@@ -1,6 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('emailForm').addEventListener('submit', (e) => {
+  const form = document.getElementById('emailForm');
+  const loading = document.getElementById('loading');
+
+  form.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    // Mostrar o indicador de carregamento
+    loading.style.display = 'flex';
 
     const name = document.getElementById('campo-nome').value;
     const email = document.getElementById('campo-email').value;
@@ -20,18 +26,21 @@ document.addEventListener('DOMContentLoaded', () => {
       body: JSON.stringify(data),
     })
       .then(response => {
-        console.log('Response status:', response.status); // Log do status da resposta
+        console.log('Response status:', response.status);
         if (!response.ok) {
           throw new Error('Erro ao enviar e-mail');
         }
         return response.json();
       })
       .then(data => {
-        console.log('Success:', data); // Log do sucesso
-        window.location.href = "../pages/thanks.html"; // Redirecionamento
+        console.log('Success:', data);
+        window.location.href = "../pages/thanks.html";
       })
       .catch((error) => {
-        console.error('Erro:', error); // Log do erro
+        console.error('Erro:', error);
+        // Esconder o indicador de carregamento em caso de erro
+        loading.style.display = 'none';
+        alert('Ocorreu um erro ao enviar o e-mail. Por favor, tente novamente.');
       });
   });
 });

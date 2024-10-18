@@ -1,0 +1,9 @@
+.projects__projetos {
+  /* padding-top: 20rem; */
+  scroll-margin-top: 4rem;
+  height: auto;
+}
+
+.projects__projetos h2 {
+  margin-top: 6rem;
+}

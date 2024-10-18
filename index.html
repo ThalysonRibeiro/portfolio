@@ -4,10 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Meu portfolio" />
-    <meta name="keywords" content="site portfolio" />
-    <meta name="author" content="rafa-dev" />
-    <title>Thalyson</title>
+    <meta
+      name="description"
+      content="Desenvolvedor web focado em criação de sites e aplicativos modernos. Confira meu portfólio com projetos em JavaScript, Node.js e mais!"
+    />
+    <meta
+      name="keywords"
+      content="portfólio, desenvolvedor web, JavaScript, Node.js, front-end, back-end, desenvolvimento de sites"
+    />
+    <meta name="author" content="Thalyson - Desenvolvedor Web" />
+    <meta
+      property="og:title"
+      content="Portfólio de Thalyson - Desenvolvedor Web"
+    />
+    <meta
+      property="og:description"
+      content="Veja meus projetos de desenvolvimento web com tecnologias modernas como JavaScript e Node.js."
+    />
+    <!-- imagem que aparecerá no compartilhament -->
+    <meta
+      property="og:image"
+      content="imagem que aparecerá no compartilhamento"
+    />
+    <!-- imagem que aparecerá no compartilhament -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta property="og:url" content="https://thalyson.dev/" />
+    <meta property="og:type" content="website" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Portfólio de Thalyson - Desenvolvedor Web</title>
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -43,7 +75,7 @@
         <li><a href="#about">sobre</a></li>
         <li><a href="#skills">habilidades</a></li>
         <li><a href="#highlights">destaques</a></li>
-        <li><a href="#projetos">projetos</a></li>
+        <li><a href="pages/projects.html">projetos</a></li>
         <li><a href="#footer">contato</a></li>
       </ul>
       <div class="icon">
@@ -61,7 +93,7 @@
           ideias em realidade!
         </p>
         <div class="contact_icons">
-          <a href="#"
+          <a onclick="enviarMensagem()" style="cursor: pointer"
             ><i
               class="bi bi-whatsapp"
               title="whatsapp"
@@ -69,7 +101,7 @@
               data-social="whatsapp"
             ></i
           ></a>
-          <a href="#"
+          <a href="https://github.com/ThalysonRibeiro" target="_blank"
             ><i
               class="bi bi-github"
               title="github"
@@ -77,7 +109,9 @@
               data-social="github"
             ></i
           ></a>
-          <a href="#"
+          <a
+            href="https://www.linkedin.com/in/thalyson-ribeiro-978b682a0/"
+            target="_blank"
             ><i
               class="bi bi-linkedin"
               title="linkedin"
@@ -108,19 +142,13 @@
             criativas.
           </h3>
           <p>
-            Olá, me chamo Thalyson Rafael Sou um desenvolvedor front-end
-            apaixonado por criar experiências web incríveis e intuitivas. Com
-            alguma experiência em trabalhos como freelancer, meu foco é
-            transformar designs complexos em código limpo e eficiente.
-            Atualmente, estou estudando novas tecnologias para expandir meu
-            conhecimento e me especializar em desenvolvimento fullstack.
+            Olá, me chamo Thalyson Rafael. Com alguma experiência em trabalhos
+            como freelancer, meu foco é transformar designs complexos em código
+            limpo e eficiente. Atualmente, estou estudando novas tecnologias
+            para expandir meu conhecimento e me especializar em desenvolvimento
+            fullstack.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-            corrupti, ipsum dolor explicabo tenetur vel corporis ea, deleniti
-            quae nostrum suscipit praesentium mollitia vitae dolores
-            voluptatibus est molestiae magni. Illum.
-          </p>
+          <p></p>
         </div>
       </section>
 
@@ -180,14 +208,15 @@
           </div>
         </div>
         <div class="icon__skills">
-          <div>HTML</div>
-          <div>CSS</div>
-          <div>JavaScript</div>
-          <div>Github</div>
-          <div>TypeScript</div>
-          <div>Tailwind CSS</div>
-          <div>React</div>
-          <div>APIs RESTful</div>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Github</span>
+          <span>TypeScript</span>
+          <span>Tailwind CSS</span>
+          <span>React</span>
+          <span>APIs RESTful</span>
+          <span>Node.js</span>
         </div>
       </section>
 
@@ -197,6 +226,54 @@
           De ideias abstratas a projetos bem-sucedidos, aqui estão alguns dos
           meus trabalhos mais recentes.
         </p>
+        <div class="project__highlights">
+          <div class="project__left">
+            <img
+              src="assets/img/stig-tattoo.png"
+              alt=" imagem projeto blend burger house"
+            />
+          </div>
+          <div class="project__right">
+            <h3>STIG Tattoo Studio</h3>
+            <h4>Landing page | Portfolio Studio de Tattoo</h4>
+            <p>
+              Portfolio para um estúdio de tatuagem. Ele tem um design moderno e
+              minimalista, com o objetivo de apresentar o estúdio e seus
+              serviços de forma visualmente atraente. Há seções dedicadas ao
+              portfólio dos artistas, galeria de fotos, informações de contato e
+              uma navegação fácil para os usuários explorarem as diferentes
+              páginas.
+            </p>
+            <div class="technologies">
+              <img
+                src="assets/icons/html.svg"
+                alt="html"
+                title="HyperText Markup Language"
+              />
+              <img
+                src="assets/icons/css.svg"
+                alt="css"
+                title="Cascading Style Sheets"
+              />
+              <img
+                src="assets/icons/js.svg"
+                alt="javascript"
+                title="javascript"
+              />
+              <img
+                src="assets/icons/tailwindcss.svg"
+                alt="tailwindcss"
+                title="tailwindcss"
+              />
+            </div>
+            <div class="btn__links">
+              <a href="https://stigtattoo.netlify.app/" target="_blank"
+                >Acesse o site &rarr;</a
+              >
+            </div>
+          </div>
+        </div>
+
         <div class="project__highlights">
           <div class="project__left">
             <img
@@ -236,8 +313,14 @@
               />
             </div>
             <div class="btn__links">
-              <a href="#">Acesse o site &rarr;</a>
-              <a href="#">Repositório &rarr;</a>
+              <a href="https://blendburgerhouse.thalyson.dev/" target="_blank"
+                >Acesse o site &rarr;</a
+              >
+              <a
+                href="https://github.com/ThalysonRibeiro/Blend-Burger-House"
+                target="_blank"
+                >Repositório &rarr;</a
+              >
             </div>
           </div>
         </div>
@@ -275,8 +358,14 @@
               />
             </div>
             <div class="btn__links">
-              <a href="#">Acesse o site &rarr;</a>
-              <a href="#">Repositório &rarr;</a>
+              <a href="https://cafenaxicara.thalyson.dev/" target="_blank"
+                >Acesse o site &rarr;</a
+              >
+              <a
+                href="https://github.com/ThalysonRibeiro/cafe-na-xicara"
+                target="_blank"
+                >Repositório &rarr;</a
+              >
             </div>
           </div>
         </div>
@@ -284,14 +373,23 @@
     </main>
 
     <footer id="footer" class="footer__contatc">
-      <h2>Vamos conversar?</h2>
+      <p>Vamos conversar?</p>
+      <h2>Entre em Contato</h2>
       <div class="contatc">
         <div class="contatc__left">
           <div class="contatc__center__left">
-            <a href="#"><i class="bi bi-envelope"></i>rafinha.head@gmail.com</a>
-            <a href="#"><i class="bi bi-github"></i>ThalysonRibeiro</a>
-            <a href="#"><i class="bi bi-whatsapp"></i>whatsapp</a>
-            <a href="#"><i class="bi bi-linkedin"></i>Linkedin</a>
+            <a
+              href="https://www.linkedin.com/in/thalyson-ribeiro-978b682a0/"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i>Linkedin</a
+            >
+            <a onclick="enviarMensagem()" style="cursor: pointer"
+              ><i class="bi bi-whatsapp"></i>whatsapp</a
+            >
+            <a href="https://github.com/ThalysonRibeiro" target="_blank"
+              ><i class="bi bi-github"></i>ThalysonRibeiro</a
+            >
+            <a><i class="bi bi-envelope"></i>rafinha.head@gmail.com</a>
           </div>
           <div class="contatc__center__right">
             <img src="assets/img/frame.png" alt="" />
@@ -336,10 +434,14 @@
         </p>
       </div>
     </footer>
+    <div id="loading">
+      <div class="spinner"></div>
+    </div>
 
     <script src="js/particles.js"></script>
     <script src="js/darkmod.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/whatsapp.js"></script>
     <script src="js/form.js"></script>
   </body>
 </html>
