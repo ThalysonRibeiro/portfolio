@@ -103,11 +103,13 @@
   .skills__left {
     width: 80%;
     margin-left: 0;
+    border: none;
   }
 
   .skills__right {
     width: 80%;
     margin-right: 0;
+    border: none;
   }
 
   .skills__left h2,

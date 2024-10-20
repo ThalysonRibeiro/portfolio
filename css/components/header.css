@@ -8,7 +8,6 @@ header {
 }
 
 header .header__left {
-  /* max-width: 62rem; */
   width: 40%;
   margin-left: 10%;
 }
@@ -40,7 +39,6 @@ header .header__left {
 }
 
 header .header__right {
-  /* max-width: 62rem; */
   display: flex;
   align-items: center;
   justify-content: end;
