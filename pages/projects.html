@@ -42,8 +42,6 @@
         <li><a href="../index.html">inicio</a></li>
         <li><a href="../index.html#about">sobre</a></li>
         <li><a href="../index.html#skills">habilidades</a></li>
-        <li><a href="../index.html#highlights">destaques de projetos</a></li>
-        <li><a href="#projetos">projetos</a></li>
         <li><a href="../index.html#footer">contato</a></li>
       </ul>
       <div class="icon">
@@ -51,6 +49,9 @@
       </div>
     </nav>
     <header id="projetos" class="projects__projetos">
+      <a href="#projetos" id="up__btn" class="up__btn"
+        ><i class="fa-solid fa-angles-up"></i
+      ></a>
       <section id="highlights" class="highlights">
         <h2>Galeria de Projetos</h2>
         <p>
@@ -202,7 +203,19 @@
         </div>
       </section>
     </header>
+    <script>
+      const scrolButton = document.getElementById("up__btn");
 
+      window.onscroll = function () {
+        if (window.scrollY > 600) {
+          scrolButton.classList.add("up__show");
+          scrolButton.classList.remove("up__btn");
+        } else {
+          scrolButton.classList.remove("up__show");
+          scrolButton.classList.add("up__btn");
+        }
+      };
+    </script>
     <script src="../js/particles.js"></script>
     <script src="../js/darkmod.js"></script>
     <script src="../js/menu.js"></script>

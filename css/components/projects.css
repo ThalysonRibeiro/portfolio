@@ -7,3 +7,34 @@
 .projects__projetos h2 {
   margin-top: 6rem;
 }
+
+.up__btn {
+  display: none;
+}
+
+.up__show {
+  display: block;
+  color: #FFF;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: var(--color-1);
+  font-size: var(--size-F-2);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  animation: up 1s ease-in-out infinite alternate;
+}
+
+@keyframes up {
+  0% {
+    transform: translatey();
+  }
+
+  100% {
+    transform: translatey(calc(4vh - 20px));
+  }
+}
+
+.up-scrolled {
+  display: none
+}

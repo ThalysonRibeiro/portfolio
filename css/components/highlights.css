@@ -87,6 +87,15 @@
   transition: 0.2s ease-in-out;
 }
 
+.highlights .btn__see_more {
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.highlights .btn__see_more:hover {
+  color: var(--color-1);
+}
+
 
 @media (min-width: 390px) and (max-width:768px) {
   .project__highlights {
