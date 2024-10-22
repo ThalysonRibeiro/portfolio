@@ -7,15 +7,10 @@
 }
 
 .about__left {
-  /* background-color: var(--bg-color-2); */
   width: 35%;
   min-height: 400px;
   margin-left: 10%;
-  border: 1px solid #d4d4d4;
-  border-top: none;
-  border-bottom: none;
-  border-left: none;
-  /* border-radius: 10px; */
+  border-right: 1px solid #d4d4d4;
   padding: 1rem;
 }
 
@@ -83,6 +78,7 @@
     height: auto;
     margin-left: 0;
     text-align: center;
+    border: none;
   }
 
   .about__left h2 {
@@ -113,6 +109,7 @@
     height: auto;
     margin-left: 0;
     text-align: center;
+    border: none;
   }
 
   .about__left h2 {

@@ -12,12 +12,12 @@
 .highlights h2 {
   font-size: var(--size-F-5);
   font-weight: 500;
-  margin-top: 1rem;
+  margin: 16px 16px 0 16px;
 }
 
 .highlights p {
   font-weight: 200;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
 .project__highlights {
@@ -101,6 +101,10 @@
   .project__highlights {
     flex-direction: column;
     margin-bottom: 1rem;
+  }
+
+  .highlights h2 {
+    font-size: var(--size-F-4);
   }
 
   .project__left {

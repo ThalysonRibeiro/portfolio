@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .then(data => {
         console.log('Success:', data);
-        window.location.href = "../pages/thanks.html";
+        window.location.href = "../pages/thanks";
       })
       .catch((error) => {
         console.error('Erro:', error);

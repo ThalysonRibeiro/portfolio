@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  /* scroll-margin-top: 4rem; */
 }
 
 .contatc {
@@ -139,7 +138,6 @@
 
   .contatc__center__left {
     width: 80%;
-    /* font-size: 0.8rem; */
   }
 
 }

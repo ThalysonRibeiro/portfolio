@@ -8,12 +8,22 @@ document.addEventListener("DOMContentLoaded", () => {
 	const moonIcon = "bi-moon";
 	const sunIcon = "bi-sun";
 
-	// Inicia com o tema escuro
-	// html.setAttribute("data-theme", darkTheme);
-	// darkmod.classList.replace(moonIcon, sunIcon);
+	// Verifica a preferência do tema no localStorage
+	const savedTheme = localStorage.getItem("theme");
 
-	// Salva a preferência no localStorage
-	// localStorage.setItem("theme", darkTheme);
+	if (savedTheme) {
+		html.setAttribute("data-theme", savedTheme);
+		// Atualiza o ícone com base no tema salvo
+		if (savedTheme === darkTheme) {
+			darkmod.classList.replace(moonIcon, sunIcon);
+		} else {
+			darkmod.classList.replace(sunIcon, moonIcon);
+		}
+	} else {
+		// Define um tema padrão caso nenhum tema seja salvo
+		html.setAttribute("data-theme", lightTheme); // Ou darkTheme, dependendo da sua preferência
+		darkmod.classList.replace(sunIcon, moonIcon);
+	}
 
 	darkmod.onclick = () => {
 		const currentTheme = html.getAttribute("data-theme");

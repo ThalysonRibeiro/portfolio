@@ -25,9 +25,7 @@
   width: 40%;
   min-height: 400px;
   margin-left: 10%;
-  border: 1px solid #d4d4d4;
-  border-radius: 10px 0 0 10px;
-  border-right: none;
+  border-right: 1px solid #d4d4d4;
   padding: 1rem;
   margin-bottom: 2rem;
 }
@@ -53,9 +51,6 @@
   padding-left: 1rem;
   display: flex;
   flex-direction: column;
-  border: 1px solid #d4d4d4;
-  border-radius: 0 10px 10px 0;
-  border-left: none;
   padding: 1rem;
   margin-bottom: 2rem;
 }
@@ -132,7 +127,6 @@
 
   .skills__right {
     padding: 0;
-    /* text-align: center; */
     align-items: center;
   }
 
